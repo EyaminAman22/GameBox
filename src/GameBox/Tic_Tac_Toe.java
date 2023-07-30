@@ -1,4 +1,6 @@
-package GameBox;import javafx.application.Platform;
+package GameBox;
+
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -48,7 +50,7 @@ public class Tic_Tac_Toe {
     public Tic_Tac_Toe() {
         Socket sc = null;
         try {
-            sc = new Socket("127.0.0.1", 6602);
+            sc = new Socket("127.0.0.1", 6607);
             OutputStreamWriter o = new OutputStreamWriter(sc.getOutputStream());
             writer = new BufferedWriter(o);
             InputStreamReader isr = new InputStreamReader(sc.getInputStream());

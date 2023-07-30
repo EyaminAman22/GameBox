@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GameBox.MainController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GameBox.MainController">
    <children>
       <Pane layoutY="-24.0" prefHeight="674.0" prefWidth="386.0" style="-fx-background-color: #AAADB3;">
          <children>
@@ -36,11 +36,6 @@
       <Pane layoutX="380.0" layoutY="-19.0" prefHeight="688.0" prefWidth="533.0">
          <children>
             <Button focusTraversable="false" layoutX="103.0" layoutY="303.0" mnemonicParsing="false" onAction="#tic_tac_toe" prefHeight="58.0" prefWidth="295.0" text="Tic Tac Toe">
-               <font>
-                  <Font size="30.0" />
-               </font>
-            </Button>
-            <Button focusTraversable="false" layoutX="106.0" layoutY="514.0" mnemonicParsing="false" onAction="#chess" prefHeight="58.0" prefWidth="295.0" text="Chess">
                <font>
                   <Font size="30.0" />
                </font>

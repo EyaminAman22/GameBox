@@ -8,7 +8,7 @@ public class GameBoxServer{
     static int ins1 = 1;
     static int ins2 = 1;
     public static void main(String[] args) {
-            try (ServerSocket serverSocket = new ServerSocket(6601)) {
+            try (ServerSocket serverSocket = new ServerSocket(6606)) {
                 while (true){
                     Socket sc = serverSocket.accept();
                     ServerMain serverMain = new ServerMain(sc);

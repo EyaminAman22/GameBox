@@ -12,7 +12,7 @@ public class Tic_Tac_Toe_Server {
     static String player2 = users.get(1).username;
     Tic_Tac_Toe_Server() {
          
-            try (ServerSocket serverSocket = new ServerSocket(6602)) {
+            try (ServerSocket serverSocket = new ServerSocket(6607)) {
                 while (true){
                     Socket sc = serverSocket.accept();
                     TicTacToeServer s = new TicTacToeServer(sc);
