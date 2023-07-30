@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GameBox.Tic_Tac_Toe">
+   <children>
+      <Pane fx:id="Pane1" layoutY="-12.0" prefHeight="662.0" prefWidth="324.0" style="-fx-background-color: #AAADB3;">
+         <children>
+            <TextArea fx:id="Chat_List" editable="false" focusTraversable="false" layoutX="24.0" layoutY="155.0" prefHeight="385.0" prefWidth="279.0">
+               <font>
+                  <Font size="20.0" />
+               </font></TextArea>
+            <TextField fx:id="Send_Msg" focusTraversable="false" layoutX="25.0" layoutY="559.0" prefHeight="45.0" prefWidth="204.0" promptText="write here">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </TextField>
+            <Button defaultButton="true" focusTraversable="false" layoutX="234.0" layoutY="559.0" mnemonicParsing="false" onAction="#Send_Msg_Method" prefHeight="45.0" prefWidth="70.0" text="Send">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+            <Label focusTraversable="false" layoutX="50.0" layoutY="69.0" prefHeight="53.0" prefWidth="260.0" text="DISCUSSION" textFill="#1e2225">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="Pane2" layoutX="323.0" layoutY="-96.0" prefHeight="842.0" prefWidth="706.0">
+         <children>
+            <Label focusTraversable="false" layoutX="107.0" layoutY="164.0" prefHeight="73.0" prefWidth="338.0" text="TIC TAC TOE" textFill="#1e2225">
+               <font>
+                  <Font name="System Bold" size="50.0" />
+               </font>
+            </Label>
+            <Button focusTraversable="false" layoutX="149.0" layoutY="376.0" mnemonicParsing="false" onAction="#start_game" prefHeight="65.0" prefWidth="241.0" text="3x3 Grid GAME">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Button>
+            <Label focusTraversable="false" layoutX="87.0" layoutY="288.0" prefHeight="46.0" prefWidth="393.0" text="Please Select Any Mode " textFill="#1e2225">
+               <font>
+                  <Font name="System Bold" size="31.0" />
+               </font>
+            </Label>
+            <Button focusTraversable="false" layoutX="149.0" layoutY="486.0" mnemonicParsing="false" onAction="#start_game_4x4" prefHeight="65.0" prefWidth="241.0" text="4x4 Grid GAME">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Button>
+            <Button focusTraversable="false" layoutX="319.0" layoutY="623.0" mnemonicParsing="false" onAction="#exit" prefHeight="65.0" prefWidth="162.0" text="Exit">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Button>
+            <Button focusTraversable="false" layoutX="87.0" layoutY="623.0" mnemonicParsing="false" onAction="#backToMain" prefHeight="65.0" prefWidth="146.0" text="Back">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane fx:id="Pane3" layoutX="323.0" layoutY="-96.0" prefHeight="747.0" prefWidth="583.0" style="-fx-background-color: #cdd0d4;" visible="false">
+         <children>
+            <Label id="gamebox" focusTraversable="false" layoutX="165.0" layoutY="110.0" prefHeight="53.0" prefWidth="260.0" stylesheets="@../Styles/style.css" text="TIC TAC TOE" textFill="#1e2225">
+               <font>
+                  <Font name="System Bold" size="44.0" />
+               </font>
+            </Label>
+            <Button id="gamebox" fx:id="button1" focusTraversable="false" layoutX="103.0" layoutY="216.0" mnemonicParsing="false" onAction="#button_clicked" prefHeight="100.0" prefWidth="100.0" stylesheets="@../Styles/style.css" text=" ">
+               <font>
+                  <Font size="45.0" />
+               </font>
+            </Button>
+            <Button id="gamebox" fx:id="button2" focusTraversable="false" layoutX="233.0" layoutY="216.0" mnemonicParsing="false" onAction="#button_clicked" prefHeight="100.0" prefWidth="100.0" stylesheets="@../Styles/style.css" text=" ">
+               <font>
+                  <Font size="45.0" />
+               </font>
+            </Button>
+            <Button id="gamebox" fx:id="button3" focusTraversable="false" layoutX="363.0" layoutY="216.0" mnemonicParsing="false" onAction="#button_clicked" prefHeight="100.0" prefWidth="100.0" stylesheets="@../Styles/style.css" text=" ">
+               <font>
+                  <Font size="45.0" />
+               </font>
+            </Button>
+            <Button id="gamebox" fx:id="button4" focusTraversable="false" layoutX="103.0" layoutY="344.0" mnemonicParsing="false" onAction="#button_clicked" prefHeight="100.0" prefWidth="100.0" stylesheets="@../Styles/style.css" text=" ">
+               <font>
+                  <Font size="45.0" />
+               </font>
+            </Button>
+            <Button id="gamebox" fx:id="button5" focusTraversable="false" layoutX="233.0" layoutY="344.0" mnemonicParsing="false" onAction="#button_clicked" prefHeight="100.0" prefWidth="100.0" stylesheets="@../Styles/style.css" text=" ">
+               <font>
+                  <Font size="45.0" />
+               </font>
+            </Button>
+            <Button id="gamebox" fx:id="button6" focusTraversable="false" layoutX="363.0" layoutY="344.0" mnemonicParsing="false" onAction="#button_clicked" prefHeight="100.0" prefWidth="100.0" stylesheets="@../Styles/style.css" text=" ">
+               <font>
+                  <Font size="45.0" />
+               </font>
+            </Button>
+            <Button id="gamebox" fx:id="button7" focusTraversable="false" layoutX="103.0" layoutY="472.0" mnemonicParsing="false" onAction="#button_clicked" prefHeight="100.0" prefWidth="100.0" stylesheets="@../Styles/style.css" text=" ">
+               <font>
+                  <Font size="45.0" />
+               </font>
+            </Button>
+            <Button id="gamebox" fx:id="button8" focusTraversable="false" layoutX="233.0" layoutY="472.0" mnemonicParsing="false" onAction="#button_clicked" prefHeight="100.0" prefWidth="100.0" stylesheets="@../Styles/style.css" text=" ">
+               <font>
+                  <Font size="45.0" />
+               </font>
+            </Button>
+            <Button id="gamebox" fx:id="button9" focusTraversable="false" layoutX="363.0" layoutY="472.0" mnemonicParsing="false" onAction="#button_clicked" prefHeight="100.0" prefWidth="100.0" stylesheets="@../Styles/style.css" text=" ">
+               <font>
+                  <Font size="45.0" />
+               </font>
+            </Button>
+            <Button id="gamebox" focusTraversable="false" layoutX="103.0" layoutY="638.0" mnemonicParsing="false" onAction="#restart" prefHeight="45.0" prefWidth="162.0" stylesheets="@../Styles/style.css" text="Restart">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Button>
+            <Button id="gamebox" focusTraversable="false" layoutX="302.0" layoutY="638.0" mnemonicParsing="false" onAction="#goBackTicTacToe" prefHeight="45.0" prefWidth="162.0" stylesheets="@../Styles/style.css" text="Back">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Button>
+            <Label fx:id="isTurn" focusTraversable="false" layoutX="205.0" layoutY="584.0" prefHeight="46.0" prefWidth="195.0" textFill="#830f0f">
+               <font>
+                  <Font name="System Bold" size="31.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="Pane4" layoutX="323.0" layoutY="-86.0" prefHeight="740.0" prefWidth="583.0" style="-fx-background-color: #cdd0d4;" visible="false">
+         <children>
+            <Label id="gamebox" focusTraversable="false" layoutX="167.0" layoutY="102.0" stylesheets="@../Styles/style.css" text="TIC TAC TOE" textFill="#1e2225">
+               <font>
+                  <Font name="System Bold" size="44.0" />
+               </font>
+            </Label>
+            <Button id="gamebox" fx:id="button11" focusTraversable="false" layoutX="81.0" layoutY="199.0" mnemonicParsing="false" onAction="#button_clicked" prefHeight="90.0" prefWidth="90.0" stylesheets="@../Styles/style.css" text=" ">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Button>
+            <Button id="gamebox" focusTraversable="false" layoutX="97.0" layoutY="645.0" mnemonicParsing="false" onAction="#restart" prefHeight="45.0" prefWidth="162.0" stylesheets="@../Styles/style.css" text="Restart">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Button>
+            <Button id="gamebox" focusTraversable="false" layoutX="316.0" layoutY="645.0" mnemonicParsing="false" onAction="#goBackTicTacToe" prefHeight="45.0" prefWidth="162.0" stylesheets="@../Styles/style.css" text="Back">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Button>
+            <Label fx:id="isTurn1" focusTraversable="false" layoutX="222.0" layoutY="584.0" textFill="#ff0b0b">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Label>
+            <Button id="gamebox" fx:id="button12" focusTraversable="false" layoutX="187.0" layoutY="199.0" mnemonicParsing="false" onAction="#button_clicked" prefHeight="90.0" prefWidth="90.0" stylesheets="@../Styles/style.css" text=" ">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Button>
+            <Button id="gamebox" fx:id="button13" focusTraversable="false" layoutX="293.0" layoutY="199.0" mnemonicParsing="false" onAction="#button_clicked" prefHeight="90.0" prefWidth="90.0" stylesheets="@../Styles/style.css" text=" ">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Button>
+            <Button id="gamebox" fx:id="button14" focusTraversable="false" layoutX="399.0" layoutY="199.0" mnemonicParsing="false" onAction="#button_clicked" prefHeight="90.0" prefWidth="90.0" stylesheets="@../Styles/style.css" text=" ">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Button>
+            <Button id="gamebox" fx:id="button15" focusTraversable="false" layoutX="81.0" layoutY="305.0" mnemonicParsing="false" onAction="#button_clicked" prefHeight="90.0" prefWidth="90.0" stylesheets="@../Styles/style.css" text=" ">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Button>
+            <Button id="gamebox" fx:id="button16" focusTraversable="false" layoutX="187.0" layoutY="305.0" mnemonicParsing="false" onAction="#button_clicked" prefHeight="90.0" prefWidth="90.0" stylesheets="@../Styles/style.css" text=" ">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Button>
+            <Button id="gamebox" fx:id="button17" focusTraversable="false" layoutX="293.0" layoutY="305.0" mnemonicParsing="false" onAction="#button_clicked" prefHeight="90.0" prefWidth="90.0" stylesheets="@../Styles/style.css" text=" ">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Button>
+            <Button id="gamebox" fx:id="button18" focusTraversable="false" layoutX="402.0" layoutY="305.0" mnemonicParsing="false" onAction="#button_clicked" prefHeight="90.0" prefWidth="90.0" stylesheets="@../Styles/style.css" text=" ">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Button>
+            <Button id="gamebox" fx:id="button19" focusTraversable="false" layoutX="81.0" layoutY="411.0" mnemonicParsing="false" onAction="#button_clicked" prefHeight="90.0" prefWidth="90.0" stylesheets="@../Styles/style.css" text=" ">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Button>
+            <Button id="gamebox" fx:id="button20" focusTraversable="false" layoutX="187.0" layoutY="411.0" mnemonicParsing="false" onAction="#button_clicked" prefHeight="90.0" prefWidth="90.0" stylesheets="@../Styles/style.css" text=" ">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Button>
+            <Button id="gamebox" fx:id="button21" focusTraversable="false" layoutX="293.0" layoutY="411.0" mnemonicParsing="false" onAction="#button_clicked" prefHeight="90.0" prefWidth="90.0" stylesheets="@../Styles/style.css" text=" ">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Button>
+            <Button id="gamebox" fx:id="button22" focusTraversable="false" layoutX="402.0" layoutY="411.0" mnemonicParsing="false" onAction="#button_clicked" prefHeight="90.0" prefWidth="90.0" stylesheets="@../Styles/style.css" text=" ">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Button>
+            <Button id="gamebox" fx:id="button23" focusTraversable="false" layoutX="80.0" layoutY="517.0" mnemonicParsing="false" onAction="#button_clicked" prefHeight="90.0" prefWidth="90.0" stylesheets="@../Styles/style.css" text=" ">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Button>
+            <Button id="gamebox" fx:id="button24" focusTraversable="false" layoutX="187.0" layoutY="517.0" mnemonicParsing="false" onAction="#button_clicked" prefHeight="90.0" prefWidth="90.0" stylesheets="@../Styles/style.css" text=" ">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Button>
+            <Button id="gamebox" fx:id="button25" focusTraversable="false" layoutX="293.0" layoutY="517.0" mnemonicParsing="false" onAction="#button_clicked" prefHeight="90.0" prefWidth="90.0" stylesheets="@../Styles/style.css" text=" ">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Button>
+            <Button id="gamebox" fx:id="button26" focusTraversable="false" layoutX="402.0" layoutY="517.0" mnemonicParsing="false" onAction="#button_clicked" prefHeight="90.0" prefWidth="90.0" stylesheets="@../Styles/style.css" text=" ">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Button>
+            <Label fx:id="isTurn4x4" focusTraversable="false" layoutX="195.0" layoutY="598.0" prefHeight="53.0" prefWidth="260.0" textFill="#900707">
+               <font>
+                  <Font name="System Bold" size="31.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</Pane>
