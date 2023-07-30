@@ -6,10 +6,24 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "GameBox.Main",
+            "projectName": "GameBox_19a61c1c"
+        },
+        {
+            "type": "java",
             "name": "GameBoxServer",
             "request": "launch",
             "mainClass": "Server.GameBoxServer",
-            "projectName": "GameBox_19a61c1c"
+            "projectName": "GameBox_19a61c1c",
+            "vmArgs": "--module-path \"D:/javafx-sdk-20.0.2/lib\" --add-modules javafx.controls,javafx.fxml",
         }
     ]
 }
